@@ -1,12 +1,12 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { Router, Route } from 'react-router';
-import { createHistory } from 'history';
-import Albums from './albums.js';
+import { hashHistory } from 'react-router';
+import mainPage from './mainPage.js';
 import AlbumPage from './albumPage.js';
 
-let routes = <Router history={createHistory()}>
+let routes = <Router history={hashHistory}>
     <Route path='/' component={mainPage} />
-    <Route path='/:album' component={AlbumPage} />
 </Router>
 
-React.render( routes, document.getElementById('app') );
+ReactDOM.render( routes, document.getElementById('app') );
