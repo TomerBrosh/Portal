@@ -1,19 +1,6 @@
-let links = [{"name":"google", "url": "http://www.google.com"}];
+let navigationLinks = [{"name":"גוגל", "url": "https://www.google.com"},{"name":"פייסבוק", "url": "https://www.facebook.com"},{"name":"טלגרם", "url": "https://web.telegram.org"}];
+let allLinks = [{"name":"גוגל", "url": "https://www.google.com"},{"name":"פייסבוק", "url": "https://www.facebook.com"},{"name":"טלגרם", "url": "https://web.telegram.org"}];
 
-//export function add({
-//    albumName,
-//    songName,
-//    }) {
-//    data[albumName].songs.push(songName);
-//    return true;
-//}
-//
-//export function albums() {
-//    return Object.keys(data);
-//}
-//
-//export function songs({
-//    albumName,
-//    }) {
-//    return data[albumName].songs;
-//}
+export let navLinks = navigationLinks;
+export let mainLinks = allLinks;
+
