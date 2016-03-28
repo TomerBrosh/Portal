@@ -20,31 +20,31 @@ const tilesData = [
         title: 'מערכת חשובה'
     },
     {
-        img: 'pics/Grindr-logo.jpg',
+        img: require('./pics/Grindr-logo.jpg'),
         title: 'Tasty burger'
     },
     {
-        img: 'pics/Grindr-logo.jpg',
+        img: require('./pics/Grindr-logo.jpg'),
         title: 'Camera'
     },
     {
-        img: 'pics/Grindr-logo.jpg',
+        img: require('./pics/Grindr-logo.jpg'),
         title: 'Morning'
     },
     {
-        img: 'pics/Grindr-logo.jpg',
+        img: require('./pics/Grindr-logo.jpg'),
         title: 'Hats'
     },
     {
-        img: 'pics/Grindr-logo.jpg',
+        img: require('./pics/Grindr-logo.jpg'),
         title: 'Honey'
     },
     {
-        img: 'pics/Grindr-logo.jpg',
+        img: require('./pics/Grindr-logo.jpg'),
         title: 'Vegetables'
     },
     {
-        img: 'pics/Grindr-logo.jpg',
+        img: require('./pics/Grindr-logo.jpg'),
         title: 'Water plant'
     },
 ];
