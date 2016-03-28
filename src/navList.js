@@ -10,16 +10,14 @@ export default class NavList extends React.Component {
         let linkStyle = {
             "color": "black",
             "textDecoration": "none",
-            "fontSize": "110%",
-            "textAlign": "center"
-        };
+            "fontSize": "110%"};
         return (
-            <div style={{"position":"absolute","top":0,"right":0,"bottom":0}}>
+            <div style={{"position":"fixed","top":0,"right":0,"bottom":0, "width": "12%"}}>
                 <List
-                    style={{"width": "150px", "height": "100%", "background":Colors.blueGrey100}}
-                    subheaderStyle={{"marginRight": "30px","marginBottom": "-25px", "background":Colors.blueGrey100}}
-                    subheader={<Cloud color={Colors.grey50} hoverColor={Colors.cyan50} style={{"width": "90px", "height": "90px", "marginTop": "-10px"}}/>}
-                    zDepth={1}>
+                    style={{"width": "100%", "height": "100%", "background":Colors.lightBlue50}}
+                    subheaderStyle={{"marginRight": "6%","marginLeft": "6%","marginBottom": "-25px", "background":Colors.lightBlue50}}
+                    subheader={<Cloud color={Colors.grey50} hoverColor={Colors.cyan50} style={{"width": "70px", "height": "70px", "marginTop": "-10px"}}/>}
+                    zDepth={0}>
                     {
 
                         this.props.links.map(function (link) {

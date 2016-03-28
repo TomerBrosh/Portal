@@ -6,7 +6,6 @@ import NavList from './NavList';
 import LinkContainer from './LinkContainer';
 import Colors from 'material-ui/lib/styles/colors';
 import Cloud from 'material-ui/lib/svg-icons/file/cloud';
-import Cloud from 'material-ui/lib/svg-icons/editor/';
 import TextField from 'material-ui/lib/text-field';
 import Paper from 'material-ui/lib/paper';
 
@@ -15,12 +14,46 @@ var user = {
 }
 
 const style = {}
+const tilesData = [
+    {
+        img: require('./pics/Grindr-logo.jpg'),
+        title: 'מערכת חשובה'
+    },
+    {
+        img: 'pics/Grindr-logo.jpg',
+        title: 'Tasty burger'
+    },
+    {
+        img: 'pics/Grindr-logo.jpg',
+        title: 'Camera'
+    },
+    {
+        img: 'pics/Grindr-logo.jpg',
+        title: 'Morning'
+    },
+    {
+        img: 'pics/Grindr-logo.jpg',
+        title: 'Hats'
+    },
+    {
+        img: 'pics/Grindr-logo.jpg',
+        title: 'Honey'
+    },
+    {
+        img: 'pics/Grindr-logo.jpg',
+        title: 'Vegetables'
+    },
+    {
+        img: 'pics/Grindr-logo.jpg',
+        title: 'Water plant'
+    },
+];
 
 ReactDOM.render(<div>
     <NavList links={ navLinks }/>
     <div
-        style={{"position":"absolute","top":0,"bottom":0,"right":"10%","left":0, "background":"white", "width":"90%", "-webkit-overflow-scrolling": "touch"}}>
-        <Paper zDepth={2}>
+        style={{"position":"absolute","top":0,"bottom":0,"right":"12%","left":0, "background":"white", "width":"88%", "WebkitOverflowScrolling": "touch"}}>
+        <Paper>
             <div id="welcome" style={{"background":Colors.lightBlue500,"width":"100%","height":"250px"}}>
                 <div style={{
             "position":"relative","top":"30%","bottom":0,"right":"8%","left":0,
@@ -39,6 +72,6 @@ ReactDOM.render(<div>
                 </div>
             </div>
         </Paper>
-        <LinkContainer />
+        <LinkContainer data = {tilesData}/>
     </div>
 </div>, document.getElementById('app'));
